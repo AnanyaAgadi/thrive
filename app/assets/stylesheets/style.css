@@ -1,0 +1,14 @@
+/*Navbar styling*/
+
+#navfont li a {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: medium;  
+}
+
+#navfont li a:hover{
+  color: white;
+  text-decoration: none;
+}
