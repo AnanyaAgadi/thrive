@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_15_115638) do
+ActiveRecord::Schema.define(version: 2022_01_16_094505) do
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "restaurant_id"
+    t.float "gross_total"
+    t.float "tax"
+    t.float "discount"
+    t.float "net_total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"

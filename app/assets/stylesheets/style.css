@@ -12,3 +12,39 @@
   color: white;
   text-decoration: none;
 }
+
+/*Contact page styling*/
+
+#contact_header {
+  margin: 30px;
+}
+
+.contact_para {
+  margin-left: 88px;
+  font-size: 17px;
+}
+
+.contact_form {
+  width: 50%;
+  margin: 0 68px;
+}
+
+/*sign up and login page share common styling*/
+
+#sign_header {
+  margin:  30px;
+}
+
+.sign{
+  margin-left: 45px;
+}
+
+.actions{
+  margin-top: 12px;
+}
+
+/*Orders page styling*/
+
+#order_disp {
+  margin-left: 45px;
+}

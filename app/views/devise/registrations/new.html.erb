@@ -1,7 +1,13 @@
-<h2>Sign up</h2>
+<h1 id="sign_header">Sign up</h1>
 
+<div class="sign">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
+  
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.search_field :name, autofocus: true, autocomplete: "name" %>
+  </div>
 
   <div class="field">
     <%= f.label :email %><br />
@@ -26,4 +32,6 @@
   </div>
 <% end %>
 
+<br>
 <%= render "devise/shared/links" %>
+</div>

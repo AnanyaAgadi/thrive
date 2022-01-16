@@ -1,2 +1,25 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+
+<h1 id="contact_header">Contact Us</h1>
+<p class="contact_para">We are available at +91-9945437815 and ananya.h@gmail.com<br>
+We would love to get in touch with you.</p>
+<%= flash[:notice] %>
+  <%= form_with(url:"/pages/thank_you", method: "post", local:
+    true) do |form| %>
+     <div class="container contact_form">
+        <div class="form-group">
+          <%= form.label :name %>
+          <%= form.text_field :name, class: "form-control", placeholder:
+            "Enter Name" %>
+        </div>
+        <div class="form-group">
+          <%= form.label :email %>
+          <%= form.text_field :email, class: "form-control", placeholder:
+             "Enter Email" %>
+        </div>
+        <div class="form-group">
+          <%= form.label :message %><%= form.text_area :message, class: "form-control", placeholder:"Enter Message", rows: 5 %>
+        </div>
+
+        <%= form.submit "Send", class: "form_label" %>
+       <% end %>
+      </div>

@@ -20,16 +20,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav" id="navfont">
             <li class="nav-item">
-              <a class="nav-link" ><%= link_to "Home",root_path %></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><%= link_to "Restaurants" ,restaurants_path %></a>
+              <a class="nav-link" ><%= link_to "Home",new_restaurant_session_path %></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" ><%= link_to "About",pages_about_path %></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" ><%= link_to "Contact" ,pages_contact_path %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><%= link_to "Orders" ,orders_path %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><%= link_to "Sign Up" ,new_restaurant_registration_path %></a>
             </li>
             
        
@@ -49,18 +52,10 @@
       </ul> -->
     </div>
    
-    <!-- <form class="d-flex">
-      <input class="form-control me-2" type="search" aria-label="Search">
-      <button class="btn btn-outline-light" type="submit">Search</button>
-    </form> -->
-    <!-- 5.2 actual search form -->
-    <%= form_with(url: restaurants_path, method: 'get', local: true) do |form| %>
-    <%= form.label :q, 'Search for:' %>
-    <%= form.text_field :q, id: 'q', value: params[:q] %><%= form.submit 'Search' %>
-    <% end %>
+   
       </div>
     </nav>
-
+    <%= render 'layouts/alerts' %>
     <%= yield %>
     <!-- Bootstrap 5 JS link -->
     <!-- Bootstrap -->

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  restaurant_id: 
+  gross_total: 
+  tax: 
+  discount: 
+  net_total: 1.5
+
+two:
+  restaurant_id: 
+  gross_total: 
+  tax: 
+  discount: 
+  net_total: 1.5

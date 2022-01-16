@@ -1,0 +1,12 @@
+<div class="row" id = "order_disp">
+  <% @orders.each do |order| %>
+    <div class="col-sm" >
+      <h1>Order # <%= order.id %></h1>
+      <p>Restaurant ID: <%= order.restaurant_id %></p>
+      <p>Gross Total: <%= order.gross_total %></p>
+      <p>Tax: <%= order.tax%></p>
+      <p>Discount: <%= order.discount %></p>
+      <p><strong> Net Total: $<%= order.net_total %></strong></p>
+    </div><!-- /col -->
+  <% end %>
+</div>
